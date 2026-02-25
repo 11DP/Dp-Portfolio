@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 120px;
+        }
+    .navigator {
+  display: flex;
+  zoom: 0.8;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background:linear-gradient(red,aqua);
+  align-items: center;
+  background: white;
+  justify-content: center;
+  padding-top: 20px;
+}
+        .nav {
+        display: flex;
+        gap: 5rem;
+        list-style: none;
+        
+        }
+        .nav a {
+            color: black;
+            text-decoration: double;
+            font-weight: bold;
+            font-size: 30px;
+            
+        }
+        .main{
+            margin: 0;
+            border: 0;
+            height: 100vh;
+            width: 100%;
+            background:linear-gradient(155deg,#0f172a 0%,#1e293b 100%) ;
+            position: fixed;
+        }
+        .j{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* margin: 3px; */
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        /* margin: 100px 20px; */
+        }
+       .school{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255,255, 255, 0.2);
+            padding: 30px;
+            margin-top:30px;
+            /* border: 20px solid rgb(245, 230, 13); */
+            border-radius: 12px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+
+        }
+        .school::before{
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: #f0f0f0;
+            clip-path:polygon(0 0,50% 100%,100% 0) ;
+            border-bottom: 1px solid #d1d1d1;
+            z-index: 1;
+        }
+        .school:hover{
+            /* border-color: #00d4ff; */
+            transform: translateY(-10px);
+        }
+       .puc{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255,255, 255, 0.2);
+            padding: 30px;
+            margin-top:150px;
+            /* border: 20px solid rgb(245, 230, 13); */
+            border-radius: 12px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+
+        }
+        .puc::before{
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: #f0f0f0;
+            clip-path:polygon(0 0,50% 100%,100% 0) ;
+            border-bottom: 1px solid #d1d1d1;
+            z-index: 1;
+        }
+        .puc:hover{
+            /* border-color: #00d4ff; */
+            transform: translateY(-10px);
+        }
+        
+        .degree{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255,255, 255, 0.2);
+            padding: 30px;
+            margin-top:300px;
+            /* border: 20px solid rgb(245, 230, 13); */
+            border-radius: 12px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+
+        }
+        .degree::before{
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: #f0f0f0;
+            clip-path:polygon(0 0,50% 100%,100% 0) ;
+            border-bottom: 1px solid #d1d1d1;
+            z-index: 1;
+        }
+        .degree:hover{
+            /* border-color: #00d4ff; */
+            transform: translateY(-10px);
+        }
+        h1{
+            font-style: italic;
+            font-size: 20px;
+        }
+        p{
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+            color: goldenrod;
+            text-transform: capitalize;
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="navigator">
+            <div class="nav">
+            <a href="./phome.html">Home</a>
+            <a href="./peducation.html">Journey</a>
+            <a href="./pproject.html">Projects</a>
+            <a href="./pcontact.html">Contact</a>
+            </div>
+    </div>
+    <div class="main">
+        <div class="j">
+            <div class="school">
+                <h1>2009-2018</h1>
+                <p>new millennium public school</p>
+                <p>80 percentage</p>
+            </div>
+            <div class="puc">
+                <h1>2018-2020</h1>
+                <p>narayana pu college</p>
+                <p>82 percentage</p>
+            </div>
+            <div class="degree">
+                <h1>2020-2024</h1>
+                <p>KSSEM</p>
+                <p>8.1 CGPA</p>
+            </div>
+        </div>
+     
+  
+
+    </div>
+</body>
+</html>
