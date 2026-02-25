@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dp's Portfolio</title>
+    <style>
+        .main{
+            background-color: aqua;
+            width: 100%;
+            height:100vh;
+            /* margin: 0;
+            border: 0; */
+            display: flex;
+            
+        }
+        .left{
+            background-color: #1e293b;
+            height: 100vh;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right{
+            height: 100vh;
+            width:50%;
+            background-color: aliceblue;
+        }
+        .formbox{
+            border-radius:8px;
+            width:70%;
+            height: 40vh;
+            max-width: 400px;
+            background-color:rgba(255,255,255,0.1);
+            padding: 40px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding-top: 40px;
+            width: 100%;
+        }
+        input,button{
+            width: 100%;
+            padding: 12px ;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+        }
+        button{
+            background-color: blueviolet;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .doodle{
+            position: relative;
+            width: 40%;
+            height: 100vh;
+            overflow:hidden;
+            opacity: 0.6;
+        }
+        .word{
+            position: absolute;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            color: #8b0000;
+            cursor: default;
+            transition: 0.3s;
+        }
+        .word:hover{
+            opacity: 1;
+            transform: scale(1.2)
+            rotate(0deg) !important;
+            color: #d41414;
+
+        }
+        .d1{
+            font-size: 24px;top: 10%;left:20%;transform: rotate(-10deg);
+        }
+         .d2{
+            font-size: 18px;top: 30%;left:50%;transform: rotate(15deg);
+        }
+         .d3{
+            font-size: 28px;top: 60%;left:30%;transform: rotate(-5deg);
+        }
+         .d4{
+            font-size: 20px;top: 80%;left:40%;transform: rotate(10deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+                <div class="formbox">
+                    <form onsubmit="loginpage(event)">
+                        <input type="email" placeholder="enter your mail id">
+                        <input type="password" placeholder="enter your secret pin">
+                        <button>Enter to the dp world</button>
+                    </form>
+                </div>
+        </div>
+        <div class="right">
+            <div class="doodle">
+                <span class="word d1">Python</span> 
+                <span class="word d2">Html</span> 
+                <span class="word d3">Css</span> 
+                <span class="word d4">Api</span> 
+                <span class="word d1">Java Script</span> 
+                <span class="word d2">Sql</span>
+                <span class="word d3">Aws</span> 
+                <span class="word d4">Linux</span>  
+                
+            </div>
+            
+
+        </div>
+    </div>
+    <Script src="./login.js">
+    </Script>
+</body>
+</html>
